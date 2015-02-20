@@ -1,0 +1,43 @@
+{{!--   <div class="row">
+  {{#each item in model}}
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">{{item.stateName}}</h3></div>
+        <div class="panel-body">
+          <p>Upper house name: <strong>{{item.upperChamber}}</strong></p>
+          {{#if item.lowerChamber}}
+            <p>Lower house name: <strong>{{item.lowerChamber}}</strong></p>
+          {{/if}}
+        </div>
+    </div>
+  {{/each}}
+</div> --}}
+
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    {{!-- <select class="form-control">
+      {{#each item in statesService.states}}
+        <option {{bind-attr value="item.abbreviation"}}>{{item.name}}</option>
+      {{/each}}
+    </select> --}}
+    {{view "select"
+      content=statesService.states
+      optionValuePath = "content.abbreviation"
+      optionLabelPath = "content.name"
+      class="form-control"
+      value=state
+    }}
+  </div>
+</div>
+<div class="row">
+  {{#each item in list}}
+    {{#if item.active}}
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">{{item.first_name}} {{item.last_name}}</h3></div>
+        <div class="panel-body">
+          <p>Party: <strong>{{item.party}}</strong></p>
+          <p class="uppercase">State: <strong>{{item.state}}</strong></p>
+        </div>
+      </div>
+      {{/if}}
+  {{/each}}
+</div>

@@ -1,0 +1,13 @@
+<div class="row">
+  {{#each item in model}}
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3 class="panel-title">{{item.stateName}}</h3></div>
+        <div class="panel-body">
+          <p>Upper house name: <strong>{{item.upperChamber}}</strong></p>
+          {{#if item.lowerChamber}}
+            <p>Lower house name: <strong>{{item.lowerChamber}}</strong></p>
+          {{/if}}
+        </div>
+    </div>
+  {{/each}}
+</div>
