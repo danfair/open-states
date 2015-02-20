@@ -11,10 +11,6 @@ export default Ember.Object.extend({
         "abbreviation": "AK"
     },
     {
-        "name": "American Samoa",
-        "abbreviation": "AS"
-    },
-    {
         "name": "Arizona",
         "abbreviation": "AZ"
     },
@@ -43,20 +39,12 @@ export default Ember.Object.extend({
         "abbreviation": "DC"
     },
     {
-        "name": "Federated States Of Micronesia",
-        "abbreviation": "FM"
-    },
-    {
         "name": "Florida",
         "abbreviation": "FL"
     },
     {
         "name": "Georgia",
         "abbreviation": "GA"
-    },
-    {
-        "name": "Guam",
-        "abbreviation": "GU"
     },
     {
         "name": "Hawaii",
@@ -93,10 +81,6 @@ export default Ember.Object.extend({
     {
         "name": "Maine",
         "abbreviation": "ME"
-    },
-    {
-        "name": "Marshall Islands",
-        "abbreviation": "MH"
     },
     {
         "name": "Maryland",
@@ -159,10 +143,6 @@ export default Ember.Object.extend({
         "abbreviation": "ND"
     },
     {
-        "name": "Northern Mariana Islands",
-        "abbreviation": "MP"
-    },
-    {
         "name": "Ohio",
         "abbreviation": "OH"
     },
@@ -175,16 +155,8 @@ export default Ember.Object.extend({
         "abbreviation": "OR"
     },
     {
-        "name": "Palau",
-        "abbreviation": "PW"
-    },
-    {
         "name": "Pennsylvania",
         "abbreviation": "PA"
-    },
-    {
-        "name": "Puerto Rico",
-        "abbreviation": "PR"
     },
     {
         "name": "Rhode Island",
