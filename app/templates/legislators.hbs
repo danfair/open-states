@@ -23,7 +23,7 @@
       content=statesService.states
       optionValuePath = "content.abbreviation"
       optionLabelPath = "content.name"
-      class="form-control"
+      class="form-control margin-bottom-20"
       value=state
     }}
   </div>
@@ -31,8 +31,8 @@
 <div class="row">
   {{#each item in list}}
     {{#if item.active}}
-      <div class="panel panel-default">
-        <div class="panel-heading"><h3 class="panel-title">{{item.first_name}} {{item.last_name}}</h3></div>
+      <div class="panel panel-default panel-info">
+        <div class="panel-heading"><h3 class="panel-title">{{item.full_name}}</h3></div>
         <div class="panel-body">
           <p>Party: <strong>{{item.party}}</strong></p>
           <p class="uppercase">State: <strong>{{item.state}}</strong></p>
