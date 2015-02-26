@@ -1,1 +1,23 @@
-LEGISLATION
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    State:
+    {{view "select"
+      content=statesService.states
+      optionValuePath = "content.abbreviation"
+      optionLabelPath = "content.name"
+      class="form-control margin-bottom-20"
+      value=state
+    }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+      Search bills for:
+      <div class="input-group">
+        {{input class="form-control"}}
+        <span class="input-group-btn">
+          <button class="btn btn-default btn-primary" type="button">Go!</button>
+        </span>
+      </div><!-- /input-group -->
+  </div>
+</div>

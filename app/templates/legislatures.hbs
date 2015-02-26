@@ -7,6 +7,7 @@
           {{#if item.lowerChamber}}
             <p>Lower house name: <strong>{{item.lowerChamber}}</strong></p>
           {{/if}}
+          {{#link-to 'legislators' (query-params state=item.stateAbbrev)}} {{item.stateName}} legislators{{/link-to}}
         </div>
     </div>
   {{/each}}

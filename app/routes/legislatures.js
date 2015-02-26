@@ -13,6 +13,7 @@ export default Ember.Route.extend({
           tempObj.lowerChamber = data[i].chambers.lower.name;
         }
         tempObj.stateName = data[i].name;
+        tempObj.stateAbbrev = data[i].abbreviation.toUpperCase();
         structuredData.pushObject(Ember.Object.create(tempObj));
       });
       return structuredData;

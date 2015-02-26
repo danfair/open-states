@@ -11,10 +11,10 @@ Router.map(function() {
   //   this.route('complete');
   // });
   this.route('legislatures', { path: '/legislatures' });
-  this.resource('legislators', { path: '/legislators' }, function() {
-    this.route('state');
+  this.route('legislators', { path: '/legislators' });
+  this.route('legislation', { path: '/legislation' }, function() {
+    this.route('state', { path: "/:state"});
   });
-  this.route('legislation', { path: '/legislation' });
 });
 
 export default Router;
