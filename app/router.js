@@ -6,14 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  // this.resource('todos', { path: '/' }, function() {
-  //   this.route('active');
-  //   this.route('complete');
-  // });
   this.route('legislatures', { path: 'legislatures' });
   this.route('legislators', { path: 'legislators' });
-  this.route('legislation', { path: 'legislation' }, function() {
-    this.route('state', { path: ":state"});
+  this.resource('legislation', { path: 'legislation' }, function() {
+    this.route('state', { path: ":state_id"});
   });
 });
 

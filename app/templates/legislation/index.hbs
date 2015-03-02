@@ -1,1 +1,10 @@
-STATE INDEX TEMPLATE
+<div class="row">
+  <div class="col-12">
+
+    State:
+    {{#each item in statesService.states}}
+      <h4>{{link-to item.name 'legislation.state' item.abbreviation}}</h4>
+    {{/each}}
+
+  </div>
+</div>
