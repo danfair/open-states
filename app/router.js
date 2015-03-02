@@ -10,10 +10,10 @@ Router.map(function() {
   //   this.route('active');
   //   this.route('complete');
   // });
-  this.route('legislatures', { path: '/legislatures' });
-  this.route('legislators', { path: '/legislators' });
-  this.route('legislation', { path: '/legislation' }, function() {
-    this.route('state', { path: "/:state"});
+  this.route('legislatures', { path: 'legislatures' });
+  this.route('legislators', { path: 'legislators' });
+  this.route('legislation', { path: 'legislation' }, function() {
+    this.route('state', { path: ":state"});
   });
 });
 

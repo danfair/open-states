@@ -187,10 +187,6 @@ export default Ember.Object.extend({
         "abbreviation": "VT"
     },
     {
-        "name": "Virgin Islands",
-        "abbreviation": "VI"
-    },
-    {
         "name": "Virginia",
         "abbreviation": "VA"
     },
