@@ -1,16 +1,3 @@
-<div class="row">
-  <div class="col-sm-6 col-xs-12">
-      Search bills for:
-      <div class="input-group">
-        {{input class="form-control" value=searchTerm}}
-        <span class="input-group-btn">
-          <button class="btn btn-default btn-primary" type="button" {{action 'search' searchText}}>Go!</button>
-        </span>
-      </div><!-- /input-group -->
-  </div>
-<hr>
-{{#each bill in list}}
-    <h4>{{bill.title}}</h4>
-    <hr>
+{{#each item in model}}
+<h4>{{item.title}}</h4>
 {{/each}}
-</div>
