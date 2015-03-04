@@ -20,5 +20,3 @@ export default Ember.Route.extend({
     });
   }
 });
-
-// params.state_id
