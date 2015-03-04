@@ -9,7 +9,6 @@ export default Ember.Controller.extend({
     this._super();
     var that = this;
     var searchParam = this.get('searchTerm') ? '&q=' + this.get('searchTerm') : '';
-    console.log(this.get('state'));
     Ember.$.getJSON('http://openstates.org/api/v1/bills/?apikey=597b1042c52c4b39b80c58c4d441c38a&state=' + this.get('state') + searchParam).then(function(data) {
       that.set('list', data);
     });
